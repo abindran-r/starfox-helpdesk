@@ -1,3 +1,30 @@
 /* body {
      font-family: 'Open Sans', sans-serif;
 } */
+
+label,.font{
+     font-family: 'Open Sans', sans-serif;
+     font-weight:normal;
+}
+
+.fontSize{
+     font-size: 1.5rem;
+
+}
+.red{
+     color:red;
+}
+.green{
+     color:green;}
+
+.bold{
+     font-style: bold;
+     font-weight: bold;
+
+}
+.header{
+     background-color:white;
+     position: fixed;
+     width: 100%;
+     top: 0;
+}
