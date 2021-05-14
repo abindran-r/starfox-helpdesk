@@ -52,7 +52,12 @@ questions=["Can you sense taste ?","Are you having any fever ?","Do you have bre
 
 questionAnswers={
     "hi":"hi buddy!!!!",
-    "hello":"hell0 buddy!!!"
+    "hello":"hello buddy!!!",
+    "github link":"https://github.com/abindran-r/starfox-helpdesk",
+    "how are you":"fine",
+    "how are you?":"fine",
+    "how was your day":"It's really a great day",
+    "how was your day?":"It's really a great day",
 }
 document.querySelector("#queries").addEventListener("keypress", (event)=>{
     if(event.key==='Enter'){
