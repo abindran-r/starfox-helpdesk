@@ -46,3 +46,28 @@ const progressBar=()=>{
         ele1.classList.remove("green");
     }
 }
+
+
+questions=["Can you sense taste ?","Are you having any fever ?","Do you have breathing issues ?"]
+
+questionAnswers={
+    "hi":"hi buddy!!!!",
+    "hello":"hell0 buddy!!!"
+}
+document.querySelector("#queries").addEventListener("keypress", (event)=>{
+    if(event.key==='Enter'){
+        talk(event)
+    }
+    } )
+    
+    const talk=(event)=>{
+       // var question = document.getElementById("queries").value;
+        console.log(event)
+       var question = event.target.value;
+        if (question in questionAnswers){
+            document.getElementById("answer").innerHTML+="User: "+ question+"<br>"+"Bot: "+questionAnswers[question] + "<br>";
+        }else{
+            document.getElementById("answer").innerHTML+="User: "+ question+"<br>"+"Bot: "+"Can't Understand..." + "<br>";
+    
+        }
+    }
